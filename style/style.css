@@ -2,7 +2,14 @@
 
 * {
     margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
 }
 
 ::-webkit-scrollbar {
@@ -10,55 +17,28 @@
     height: 0px;
 }
 
-body {       
-    background-image: url('../images/fundo-madeira.jpg') ;
-    background-attachment: fixed;
-    background-repeat: no-repeat;    
-    background-position: center ;
-    background-size: cover;
-    
-    
-    
-}
-
-.container {
-    position: relative;    
-}
-
 #iphone {
-    position: absolute;    
+    position: absolute;
+    background-image: url('../images/frame-iphone.png'); 
+    background-repeat: no-repeat;
+
+
+
+    width: 311px; 
+    height: 627px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 25%);
+    transform: translate(-50%, -50%);
+   
     
 }
 
 iframe {
-    background-attachment: fixed;
-    width: 264px;
-    height: 468px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 51%);
-
+    top: 80px;
+    left: 23px;
+    width: 265px;
+    height: 470px;
 }
 
-#logos {
-    position: absolute;
-    left: 99%;
-    transform: translate(-96%);
-}
-#logos > a > img{
-    margin: 15px;
-    border-radius: 50%;
-    
-    width: 60px;
-    box-shadow: 5px 7px 10px 3px black ;
-    transition-duration: 0.5s;
-}
 
-#logos > a > img:hover {
-    
-    border: 2px solid white;
-}
